@@ -15,3 +15,7 @@ ORDER by replacement_cost DESC , title ASC
 SELECT c.city, e.country FROM city c
 JOIN country e on c.country_id  = e.country_id 
 ORDER by country
+
+---5
+SELECT e.city FROM country c
+JOIN city e on c.country_id = e.country_id
