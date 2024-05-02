@@ -6,3 +6,8 @@ ORDER by title ASC
 SELECT DISTINCT rating FROM film
 ORDER by rating ASC
 
+--3
+SELECT title, replacement_cost, rating FROM film
+WHERE rating in ("PG-13","PG")
+ORDER by replacement_cost DESC , title ASC
+
