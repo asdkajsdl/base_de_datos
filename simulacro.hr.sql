@@ -11,5 +11,10 @@ SELECT  job_title as manager,min_salary,max_salary FROM jobs
 WHERE job_title like '%manager'
 ORDER by min_salary,max_salary DESC
 
+4_
+SELECT country_name,region_name FROM countries c
+JOIN  regions r on r.region_id = c.region_id
+ORDER by region_name,country_name ASC
+
 
 
