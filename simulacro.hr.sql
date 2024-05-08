@@ -15,3 +15,11 @@ ORDER by min_salary,max_salary DESC
 SELECT country_name,region_name FROM countries c
 JOIN  regions r on r.region_id = c.region_id
 ORDER by region_name,country_name ASC
+
+5_
+SELECT first_name,last_name,department_name,salary FROM employees e
+JOIN departments d on e.department_id = d.department_id
+WHERE salary BETWEEN 9000 AND 17000 
+ORDER by salary DESC
+
+
