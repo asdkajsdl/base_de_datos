@@ -5,3 +5,5 @@ limit 1 offset 1
 
 SELECT membership_status FROM get_fit_now_member
 
+SELECT DISTINCT description,city FROM crime_scene_report
+ORDER by city ASC
